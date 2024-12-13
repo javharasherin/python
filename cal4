@@ -1,0 +1,39 @@
+num1 = float(input("Number 1: "))
+num2 = float(input("Number 2: "))
+def add():
+    result = num1 + num2
+    return result
+
+def subtract():
+    result = num1 - num2
+    return result
+
+def multiply():
+    result = num1 * num2
+    return result
+
+def divide():
+    result = num1/num2
+    return result
+for i in range(5):
+    print("Choose an operation:")
+    print("the options are 1.addition\n 2.substraction\n 3.multiplication\n 4.division\n 5.exit\n" )
+    choice = int(input("Enter choice (1/2/3/4/5): "))
+
+    if choice == 1:
+        c=add()
+        print(c)
+    elif choice == 2:
+        c=subtract()
+        print(c)
+    elif choice == 3:
+        c=multiply()
+        print(c)
+
+    elif choice == 4:
+        c=divide()
+    elif choice == 5:
+        exit
+        break
+    else:
+        print("Invalid choice")
